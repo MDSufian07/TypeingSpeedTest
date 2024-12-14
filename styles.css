@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main Container */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Title Styling */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Typing Text Display */
+.typing-text {
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+/* Input Area */
+.input-area {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-area:focus {
+    border-color: #ff6b81;
+    box-shadow: 0px 0px 8px rgba(255, 107, 129, 0.5);
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    text-align: center;
+    color: #333;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff6b81;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Restart Button */
+.btn {
+    background: linear-gradient(45deg, #ff6b81, #ff9a9e);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(255, 107, 129, 0.5);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(255, 107, 129, 0.7);
+}
